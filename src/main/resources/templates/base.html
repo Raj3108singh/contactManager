@@ -1,0 +1,15 @@
+<!-- <div th:fragment="parent(x,y)"> -->
+<div th:fragment="parent(content)">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, magni quo, possimus harum aut quia iste delectus perferendis
+    obcaecati cupiditate fuga veritatis eveniet repellat tempora necessitatibus aspernatur molestias ea velit.
+  </p>
+  <!-- <p>value of x : <span th:text="${x}"></span></p>
+  <p>value of y : <span th:text="${y}"></span></p> -->
+
+  <p th:replace="${content}"></p>
+</div>
+
+<div th:fragment="test">
+  <p>This is test fragment</p>
+</div>
